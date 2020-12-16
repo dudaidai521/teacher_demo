@@ -23,6 +23,7 @@ public class TeacherController {
     @PostMapping
     public Result saveTeacher(@RequestBody Teacher teacher){
         System.out.println("添加讲师");
+        System.out.println(11);
        boolean b =  teacherService.save(teacher);
        if(b){
            return Result.ok();
